@@ -38,11 +38,11 @@ main{max-width:1040px;margin:0 auto;padding:56px 16px 80px}
 header.paper{max-width:820px;margin:0 auto 40px;text-align:center}
 h1{font-size:clamp(1.6rem,3.6vw,2.35rem);line-height:1.22;font-weight:600;letter-spacing:-.01em;margin:0 0 18px;text-wrap:balance}
 .authors{color:var(--ink-3);font-size:.95rem;margin:0}
-.intro{max-width:640px;margin:22px auto 0;padding:12px 18px;border:1px solid var(--line);border-radius:8px;
+.intro{max-width:640px;margin:0 auto 56px;text-align:center;padding:12px 18px;border:1px solid var(--line);border-radius:8px;
   background:var(--surface);color:var(--ink-2);font-size:.98rem;line-height:1.55;text-wrap:pretty}
 .intro a{color:var(--accent);text-decoration:none}
 .intro a:hover{text-decoration:underline}
-.abstract{max-width:760px;margin:0 auto 56px;padding:0}
+.abstract{max-width:760px;margin:0 auto 32px;padding:0}
 .abstract h2{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-3);font-weight:600;margin:0 0 10px;text-align:center}
 .abstract p{margin:0;text-align:justify;hyphens:auto;color:var(--ink)}
 h2.main{font-size:1.45rem;font-weight:600;margin:0 0 6px;padding-top:28px;border-top:1px solid var(--line)}
@@ -105,16 +105,17 @@ footer{max-width:1040px;margin:0 auto;padding:0 16px 48px;color:var(--ink-3);fon
   <header class="paper">
     <h1>Pretraining-free End-to-End Blind Guitar Effect Cloning via Hyper-Networks</h1>
     <p class="authors">Anonymous authors &middot; under review</p>
-    <p class="intro">This page presents the audio examples of the MUSHRA listening test, which was
-      conducted with ten subjects. It covers the effects <a href="#distortion">Distortion</a>,
-      <a href="#delay">Feedback Delay</a> and <a href="#reverb">Reverb</a>, each with three
-      parameter settings.</p>
   </header>
 
   <section class="abstract" aria-labelledby="h-abstract">
     <h2 id="h-abstract">Abstract</h2>
     <p>Guitar effects shape the sound of electric guitars and have played an important role in many genres of popular music. Automatically replicating such effects from reference audio could support creative music production. This work proposes hyper-networks for blind cloning of guitar effects from a reference guitar recording. The method extracts effect embeddings from a reference recording and uses them to steer neural audio-effect generators. The model components are trained jointly end-to-end without pretraining. The approach was tested with three guitar effects, namely Reverb, Delay and Distortion, and evaluated several state-of-the-art metrics across several datasets as well as self-recorded guitar samples. Objective evaluations showed a superiority of hyper-conditioning over feature-wise linear modulation (FiLM). A listening test with 10 subjects showed no significant difference between the subjective effect quality rating of the hyper-cloned effects compared to the reference ground-truth effects.</p>
   </section>
+
+  <p class="intro">This page presents the audio examples of the MUSHRA listening test, which was
+      conducted with ten subjects. It covers the effects <a href="#distortion">Distortion</a>,
+      <a href="#delay">Feedback Delay</a> and <a href="#reverb">Reverb</a>, each with three
+      parameter settings.</p>
 
   <h2 class="main">Audio Examples and Waveform Comparison</h2>
   <ul class="toc"><li><a href="#distortion">Distortion</a></li><li><a href="#delay">Delay</a></li><li><a href="#reverb">Reverb</a></li></ul>
